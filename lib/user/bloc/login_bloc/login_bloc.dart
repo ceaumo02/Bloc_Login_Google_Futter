@@ -3,7 +3,7 @@ import 'package:platzi_viajes/user/bloc/login_bloc/bloc.dart';
 import 'dart:async';
 import 'package:meta/meta.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
-import 'package:platzi_viajes/user/widgets/validators.dart';
+import 'package:platzi_viajes/user/ui/widgets/validators.dart';
 import 'package:rxdart/rxdart.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {

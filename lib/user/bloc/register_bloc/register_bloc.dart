@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:platzi_viajes/user/bloc/register_bloc/bloc.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
-import 'package:platzi_viajes/user/widgets/validators.dart';
+import 'package:platzi_viajes/user/ui/widgets/validators.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:meta/meta.dart';
 

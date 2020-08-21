@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:platzi_viajes/user/bloc/authentication_bloc/bloc.dart';
 import 'package:platzi_viajes/user/bloc/simple_bloc_delegate.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
-import 'package:platzi_viajes/user/ui/home_screen.dart';
-import 'package:platzi_viajes/user/ui/login/login_screen.dart';
+import 'package:platzi_viajes/user/ui/screens/home_screen.dart';
+import 'package:platzi_viajes/user/ui/widgets/login/login_screen.dart';
 import 'package:platzi_viajes/user/ui/splash_screen.dart';
 
 void main() {
