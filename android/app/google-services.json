@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "207441040845",
+    "firebase_url": "https://platziviajes.firebaseio.com",
+    "project_id": "platziviajes",
+    "storage_bucket": "platziviajes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207441040845:android:84c308ee7bd34c0cab6084",
+        "android_client_info": {
+          "package_name": "com.example.platzi_viajes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207441040845-c3uk46j20k7i2bree130eeb3d0p20dk3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.platzi_viajes",
+            "certificate_hash": "582f0ae6038f410211d4f2855a4840b40c26c7b3"
+          }
+        },
+        {
+          "client_id": "207441040845-0cv275m0fa80oqtg6vd906e40mfmg4lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4fSp4ck-HDqZX-fDDxWjaqOltwz9ceXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207441040845-0cv275m0fa80oqtg6vd906e40mfmg4lj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
