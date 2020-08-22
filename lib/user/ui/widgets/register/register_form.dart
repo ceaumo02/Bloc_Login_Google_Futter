@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:platzi_viajes/user/bloc/authentication_bloc/bloc.dart';
 import 'package:platzi_viajes/user/bloc/register_bloc/bloc.dart';
-import 'package:platzi_viajes/user/ui/register/register_button.dart';
+import 'package:platzi_viajes/user/ui/widgets/register/register_button.dart';
 
 class RegisterForm extends StatefulWidget {
   @override

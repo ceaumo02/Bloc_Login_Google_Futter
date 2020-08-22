@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:platzi_viajes/user/bloc/register_bloc/bloc.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
-import 'package:platzi_viajes/user/ui/register/register_form.dart';
+import 'package:platzi_viajes/user/ui/widgets/register/register_form.dart';
 
 class RegisterScreen extends StatelessWidget {
   final UserRepository _userRepository;

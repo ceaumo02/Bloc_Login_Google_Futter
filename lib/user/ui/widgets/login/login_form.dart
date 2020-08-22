@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:platzi_viajes/user/bloc/authentication_bloc/bloc.dart';
 import 'package:platzi_viajes/user/bloc/login_bloc/bloc.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
-import 'package:platzi_viajes/user/ui/login/create_account_button.dart';
-import 'package:platzi_viajes/user/ui/login/login_button.dart';
+import 'package:platzi_viajes/user/ui/widgets/login/create_account_button.dart';
+import 'package:platzi_viajes/user/ui/widgets/login/login_button.dart';
 import 'package:platzi_viajes/user/ui/widgets/login/google_login_button.dart';
 
 class LoginForm extends StatefulWidget {

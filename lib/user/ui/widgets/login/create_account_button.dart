@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
-import 'package:platzi_viajes/user/ui/register/register_state.dart';
+import 'package:platzi_viajes/user/ui/widgets/register/register_state.dart';
 
 class CreateAccountButton extends StatelessWidget {
   final UserRepository _userRepository;
