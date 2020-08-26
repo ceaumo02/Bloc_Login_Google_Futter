@@ -8,8 +8,6 @@ class CardImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
     final card = Container(
       height: 350.0,
       width: 250.0,

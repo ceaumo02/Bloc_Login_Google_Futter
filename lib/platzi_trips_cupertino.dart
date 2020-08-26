@@ -7,7 +7,6 @@ import 'package:platzi_viajes/User/ui/screens/profile_trips.dart';
 class PlatziTripsCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(items: [

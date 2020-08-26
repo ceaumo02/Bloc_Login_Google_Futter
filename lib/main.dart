@@ -7,8 +7,11 @@ import 'package:platzi_viajes/user/repository/user_repository.dart';
 import 'package:platzi_viajes/user/ui/screens/home_screen.dart';
 import 'package:platzi_viajes/user/ui/widgets/login/login_screen.dart';
 import 'package:platzi_viajes/user/ui/screens/splash_screen.dart';
+import 'package:flutter/services.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.transparent));
   WidgetsFlutterBinding.ensureInitialized();
   BlocSupervisor.delegate = SimpleBlocDelegate();
 
@@ -31,6 +34,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
         builder: (context, state) {
           if (state is Uninitialized) {
