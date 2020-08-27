@@ -37,27 +37,28 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PlatziTripsCupertino(),
-      // home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
-      //   builder: (context, state) {
-      //     if (state is Uninitialized) {
-      //       return SplashScreen();
-      //     }
-      //     if (state is Authenticated) {
-      //       return HomeScreen(
-      //         name: state.displayName,
-      //       );
-      //     }
-      //     if (state is Unauthenticated) {
-      //       return LoginScreen(
-      //         userRepository: _userRepository,
-      //       );
-      //     }
-      //     return Container(
-      //       color: Colors.yellow,
-      //     );
-      //   },
-      // ),
+      // home: PlatziTripsCupertino(),
+      home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
+        builder: (context, state) {
+          if (state is Uninitialized) {
+            return SplashScreen();
+          }
+          if (state is Authenticated) {
+            return PlatziTripsCupertino();
+            // return HomeScreen(
+            //   name: state.displayName,
+            // );
+          }
+          if (state is Unauthenticated) {
+            return LoginScreen(
+              userRepository: _userRepository,
+            );
+          }
+          return Container(
+            color: Colors.yellow,
+          );
+        },
+      ),
     );
   }
 }
