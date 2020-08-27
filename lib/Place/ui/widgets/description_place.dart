@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:platzi_viajes/widgets/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
-  String namePlace;
-  int stars;
-  String descriptionPlace;
+  final String namePlace;
+  final int stars;
+  final String descriptionPlace;
 
   DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
 
   @override
   Widget build(BuildContext context) {
 
-    final star_half = Container(
+    final starHalf = Container(
       margin: EdgeInsets.only(top: 353.0, right: 3.0),
       child: Icon(
         Icons.star_half,
@@ -19,7 +19,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final star_border = Container(
+    final starBorder = Container(
       margin: EdgeInsets.only(top: 353.0, right: 3.0),
       child: Icon(
         Icons.star_border,
@@ -35,7 +35,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row(
+    final titleStars = Row(
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(top: 350.0, left: 20.0, right: 20.0),
@@ -49,7 +49,7 @@ class DescriptionPlace extends StatelessWidget {
           ),
         ),
         Row(
-          children: <Widget>[star, star, star, star, star_half],
+          children: <Widget>[star, star, star, star, starHalf],
         )
       ],
     );
@@ -68,7 +68,7 @@ class DescriptionPlace extends StatelessWidget {
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[title_stars, description, ButtonPurple("Navigate")],
+      children: <Widget>[titleStars, description, ButtonPurple("Navigate")],
     );
   }
 }

@@ -78,30 +78,63 @@ class _RegisterFormState extends State<RegisterForm> {
       }
     }, child: BlocBuilder<RegisterBloc, RegisterState>(
       builder: (context, state) {
-        return Padding(
+        return Container(
           padding: EdgeInsets.all(20),
           child: Form(
             child: ListView(
+              shrinkWrap: true,
               children: <Widget>[
-                // Un textForm para email
-                TextFormField(
-                  controller: _emailController,
-                  decoration: InputDecoration(
-                    icon: Icon(Icons.email),
-                    labelText: 'Email',
+                Padding(
+                  padding: EdgeInsets.only(top: 140, bottom: 20),
+                  child: Text(
+                    "Create an Account",
+                    style: TextStyle(
+                        fontSize: 32.0,
+                        fontFamily: "Lato",
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
                   ),
-                  keyboardType: TextInputType.emailAddress,
-                  autocorrect: false,
-                  autovalidate: true,
-                  validator: (_) {
-                    return !state.isEmailValid ? 'Invalid Email' : null;
-                  },
+                  // child: Image.asset(
+                  //   'assets/aearth.png',
+                  //   height: 100,
+                  // ),
+                ),
+                // Un textForm para email
+                Center(
+                  child: TextFormField(
+                    style: TextStyle(color: Colors.white, fontFamily: 'Lato'),
+                    controller: _emailController,
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.email, 
+                      color: Colors.white),
+                      labelText: 'Email',
+                      labelStyle: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Lato',
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold)
+                    ),
+                    keyboardType: TextInputType.emailAddress,
+                    autocorrect: false,
+                    autovalidate: true,
+                    validator: (_) {
+                      return !state.isEmailValid ? 'Invalid Email' : null;
+                    },
+                  ),
                 ),
                 // Un textForm para password
                 TextFormField(
+                  style: TextStyle(color: Colors.white, fontFamily: 'Lato'),
                   controller: _passwordController,
                   decoration: InputDecoration(
-                      icon: Icon(Icons.lock), labelText: 'Password'),
+                      icon: Icon(Icons.lock, color: Colors.white),
+                      labelText: 'Password',
+                      labelStyle: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Lato',
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold)
+                      ),
                   obscureText: true,
                   autocorrect: false,
                   autovalidate: true,

@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:platzi_viajes/user/bloc/register_bloc/bloc.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
 import 'package:platzi_viajes/user/ui/widgets/register/register_form.dart';
+import 'package:platzi_viajes/widgets/gradient_back.dart';
 
 class RegisterScreen extends StatelessWidget {
   final UserRepository _userRepository;
@@ -15,14 +16,15 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Register'),
-      ),
-      body: Center(
-        child: BlocProvider<RegisterBloc>(
-          create: (context) => RegisterBloc(userRepository: _userRepository),
-          child: RegisterForm(),
-        ),
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          GradientBack('', null),
+          BlocProvider<RegisterBloc>(
+            create: (context) => RegisterBloc(userRepository: _userRepository),
+            child: RegisterForm(),
+          ),
+        ],
       ),
     );
   }

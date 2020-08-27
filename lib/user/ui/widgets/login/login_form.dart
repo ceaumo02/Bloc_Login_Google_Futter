@@ -83,16 +83,31 @@ class _LoginFormState extends State<LoginForm> {
             child: ListView(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 20),
-                  child: Image.asset(
-                    'assets/travel_logo.png',
-                    height: 200,
+                  padding: EdgeInsets.only(top: 140, bottom: 20),
+                  child: Text(
+                    "Welcome \nThis is Your Travel App",
+                    style: TextStyle(
+                        fontSize: 32.0,
+                        fontFamily: "Lato",
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
                   ),
+                  // child: Image.asset(
+                  //   'assets/aearth.png',
+                  //   height: 100,
+                  // ),
                 ),
                 TextFormField(
+                  style: TextStyle(color: Colors.white, fontFamily: 'Lato'),
                   controller: _emailController,
                   decoration: InputDecoration(
-                      icon: Icon(Icons.email), labelText: 'Email'),
+                      icon: Icon(Icons.email, color: Colors.white),
+                      labelText: 'Email',
+                      labelStyle: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Lato',
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold)),
                   keyboardType: TextInputType.emailAddress,
                   autovalidate: true,
                   autocorrect: false,
@@ -101,9 +116,16 @@ class _LoginFormState extends State<LoginForm> {
                   },
                 ),
                 TextFormField(
+                  style: TextStyle(color: Colors.white, fontFamily: 'Lato'),
                   controller: _passwordController,
                   decoration: InputDecoration(
-                      icon: Icon(Icons.lock), labelText: 'Password'),
+                      icon: Icon(Icons.lock, color: Colors.white),
+                      labelText: 'Password',
+                      labelStyle: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Lato',
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold)),
                   obscureText: true,
                   autovalidate: true,
                   autocorrect: false,
