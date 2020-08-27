@@ -9,7 +9,10 @@ class PlatziTripsCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
-        tabBar: CupertinoTabBar(items: [
+        
+        tabBar: CupertinoTabBar(
+          backgroundColor: Colors.transparent,
+          items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home, color: Colors.indigo), title: Text("")),
           BottomNavigationBarItem(

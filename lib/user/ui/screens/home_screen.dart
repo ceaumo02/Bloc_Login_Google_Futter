@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Center(
-            child: Text('Bienvenido $name!'),
+            child: Text('Welcome $name!'),
           )
         ],
       ),

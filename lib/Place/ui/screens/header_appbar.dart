@@ -5,8 +5,10 @@ import 'package:platzi_viajes/Place/ui/widgets/card_image_list.dart';
 class HeaderAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[GradientBack("Bienvenido", 250), CardImageList()],
+    return Container(
+      child: Stack(
+        children: <Widget>[GradientBack("Welcome", 250), CardImageList()],
+      ),
     );
   }
 }

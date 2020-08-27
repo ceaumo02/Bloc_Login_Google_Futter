@@ -22,7 +22,7 @@ class GradientBack extends StatelessWidget {
         style: TextStyle(
             color: Colors.white,
             fontSize: 30.0,
-            fontFamily: "Lato",
+            fontFamily: "LatoBlack",
             fontWeight: FontWeight.bold),
       ),
       alignment: Alignment(-0.9, -0.6),

@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
           alignment: Alignment.center,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/bgt.jpg'), fit: BoxFit.cover)),
+                  image: AssetImage('assets/img/bgt.jpg'), fit: BoxFit.cover)),
           child: Shimmer.fromColors(
             period: Duration(milliseconds: 1500),
             baseColor: Color(0xff7f00ff),

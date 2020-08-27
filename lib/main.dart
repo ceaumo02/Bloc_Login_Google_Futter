@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:platzi_viajes/platzi_trips.dart';
+import 'package:platzi_viajes/platzi_trips_cupertino.dart';
 import 'package:platzi_viajes/user/bloc/authentication_bloc/bloc.dart';
 import 'package:platzi_viajes/user/bloc/simple_bloc_delegate.dart';
 import 'package:platzi_viajes/user/repository/user_repository.dart';
@@ -35,26 +37,27 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
-        builder: (context, state) {
-          if (state is Uninitialized) {
-            return SplashScreen();
-          }
-          if (state is Authenticated) {
-            return HomeScreen(
-              name: state.displayName,
-            );
-          }
-          if (state is Unauthenticated) {
-            return LoginScreen(
-              userRepository: _userRepository,
-            );
-          }
-          return Container(
-            color: Colors.yellow,
-          );
-        },
-      ),
+      home: PlatziTripsCupertino(),
+      // home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
+      //   builder: (context, state) {
+      //     if (state is Uninitialized) {
+      //       return SplashScreen();
+      //     }
+      //     if (state is Authenticated) {
+      //       return HomeScreen(
+      //         name: state.displayName,
+      //       );
+      //     }
+      //     if (state is Unauthenticated) {
+      //       return LoginScreen(
+      //         userRepository: _userRepository,
+      //       );
+      //     }
+      //     return Container(
+      //       color: Colors.yellow,
+      //     );
+      //   },
+      // ),
     );
   }
 }
