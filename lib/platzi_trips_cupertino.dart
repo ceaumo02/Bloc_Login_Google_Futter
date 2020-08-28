@@ -5,10 +5,6 @@ import 'package:platzi_viajes/Place/ui/screens/search_trips.dart';
 import 'package:platzi_viajes/User/ui/screens/profile_trips.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
-  final String name;
-
-  PlatziTripsCupertino({Key key, @required this.name}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

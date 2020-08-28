@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:platzi_viajes/platzi_trips.dart';
 import 'package:platzi_viajes/platzi_trips_cupertino.dart';
 import 'package:platzi_viajes/user/bloc/authentication_bloc/bloc.dart';
 import 'package:platzi_viajes/user/bloc/simple_bloc_delegate.dart';
